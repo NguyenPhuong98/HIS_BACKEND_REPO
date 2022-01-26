@@ -1,0 +1,31 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "backend",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon --exec ./node_modules/.bin/babel-node src/index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"argon2": "^0.28.3",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.2",
+		"fs": "^0.0.1-security",
+		"jsonwebtoken": "^8.5.1",
+		"mssql": "^7.3.0",
+		"sequelize": "^6.13.0",
+		"tedious": "^14.0.0",
+		"xlsx": "^0.17.5"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.16.7",
+		"@babel/core": "^7.16.7",
+		"@babel/node": "^7.16.7",
+		"@babel/preset-env": "^7.16.7",
+		"nodemon": "^2.0.15"
+	}
+}

@@ -1,0 +1,61 @@
+@api = http://localhost:4000/api
+
+###
+GET {{api}}/auth
+
+###
+POST {{api}}/auth/login
+Content-Type: application/json
+
+{
+    "username": "bichhien",
+    "password": "trangxg"
+}
+
+
+###
+GET {{api}}/list/departments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+###
+GET {{api}}/list/rooms
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+###
+GET {{api}}/list/commands
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+###
+GET {{api}}/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+###
+GET {{api}}/inpatients/BTA72521001138
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+###
+GET {{api}}/inpatients/couponcare?MaBA=BTA72521001138
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+###
+POST {{api}}/inpatients/couponcare?MaBA=BTA72521001138
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+{
+    "couponCode": "",
+    "time": "2022-01-24T23:01:41.609Z",
+    "happen":"Test diễn biến 1111",
+    "commands": "Test Y lệnh 3333",
+    "user":"nguyenvanphuong"
+}
+
+###
+DELETE {{api}}/inpatients/couponcare?MaBA=BYH72518014267&MaDTri=CS00220124001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
+
+
+
+
+
+
