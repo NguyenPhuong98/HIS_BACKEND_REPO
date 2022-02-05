@@ -15,7 +15,9 @@ router.post('/couponcare', verifyToken, saveCouponCare);
 
 router.delete('/couponcare', verifyToken, DeleteCouponCare);
 
-router.get('/', verifyToken, getPatients);
+router.get('/search', verifyToken, getPatients);
+
+// router.get('/', verifyToken, getPatients);
 
 router.get('/:id', verifyToken, getPatientByMaBA);
 

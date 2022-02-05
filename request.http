@@ -26,7 +26,7 @@ GET {{api}}/list/commands
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
 
 ###
-GET {{api}}/patients
+GET {{api}}/inpatients?BANumber=BTA72521001138
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5WIjoiYmljaGhpZW4iLCJpYXQiOjE2NDE4ODYwNDd9.QTR0mUuIo2IRnlh9rb6Xu3e68jeZ-cVDzbZLSRPDE4c
 
 ###
